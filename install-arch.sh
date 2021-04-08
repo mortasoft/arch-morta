@@ -1,6 +1,6 @@
 #!/bin/bash
 # Based on https://shirotech.com/linux/how-to-automate-arch-linux-installation/
-DISK="/dev/$1"
+DISK="/dev/sda"
 PARTITION="${DISK}1"
 
 echo "-- Disk configuration --"
