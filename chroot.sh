@@ -5,7 +5,9 @@ USERNAME=mortasoft
 HOME_DIR="/home/${USERNAME}"
 SWAP_SIZE=4G
 
-echo DISK="$1", HOST="$HOST", USERNAME="$USERNAME", HOME_DIR="$HOME_DIR"
+echo DISK="sda", HOST="$HOST", USERNAME="$USERNAME", HOME_DIR="$HOME_DIR"
+echo "-- Configuring the system --"
+read stop
 
 # Grub as a bootloader
 grub-install --target=i386-pc --recheck "$1"
